@@ -24,7 +24,7 @@
     return _shared;
 }
 
-- (void)coordinatesForLocationNamed:(NSString *)locationName callback:(void(^)(CLLocationCoordinate2D coordinates, NSError *error))callback
+- (void)coordinateForLocationNamed:(NSString *)locationName callback:(void(^)(CLLocationCoordinate2D coordinate, NSError *error))callback
 {
     NSString *urlString = [NSString stringWithFormat:kAPIURLFormat, [locationName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSURL *url = [NSURL URLWithString:urlString];

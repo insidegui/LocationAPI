@@ -20,15 +20,15 @@
  Calls "callback" with a CLLocationCoordinate2D struct containing the latitude and logitude of the location
  
  Example:
- [[LocationAPI sharedLocationAPI] coordinatesForLocationNamed:@"Cupertino" callback:^(CLLocationCoordinate2D coordinates, NSError *error) {
+ [[LocationAPI sharedLocationAPI] coordinateForLocationNamed:@"Cupertino" callback:^(CLLocationCoordinate2D coordinate, NSError *error) {
  if (error) {
  [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
  return;
  }
  
- NSLog(@"Coordinates: %f,%f", coordinates.latitude, coordinates.longitude);
+ NSLog(@"coordinate: %f,%f", coordinate.latitude, coordinate.longitude);
  }];
  */
-- (void)coordinatesForLocationNamed:(NSString *)locationName callback:(void(^)(CLLocationCoordinate2D coordinates, NSError *error))callback;
+- (void)coordinateForLocationNamed:(NSString *)locationName callback:(void(^)(CLLocationCoordinate2D coordinate, NSError *error))callback;
 
 @end
