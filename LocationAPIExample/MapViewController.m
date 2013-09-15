@@ -21,15 +21,15 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [[LocationAPI sharedLocationAPI] coordinatesForLocationNamed:self.locationName callback:^(CLLocationCoordinate2D coordinates, NSError *error) {
+    [[LocationAPI sharedLocationAPI] coordinateForLocationNamed:self.locationName callback:^(CLLocationCoordinate2D coordinate, NSError *error) {
         if (error) {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
             return;
         }
         
-        NSLog(@"Coordinates: %f,%f", coordinates.latitude, coordinates.longitude);
+        NSLog(@"Coordinate: %f,%f", coordinate.latitude, coordinate.longitude);
         
-        MKCoordinateRegion zoomRegion = MKCoordinateRegionMakeWithDistance(coordinates, 2000, 2000);
+        MKCoordinateRegion zoomRegion = MKCoordinateRegionMakeWithDistance(coordinate, 2000, 2000);
         [self.mapView setRegion:zoomRegion animated:YES];
     }];
 }

@@ -49,7 +49,7 @@
 		DDA08ACD17E60AC70056F04B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDA08AD017E60AC70056F04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDA08AD217E60AC70056F04B /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		DDA08AD317E60AC70056F04B /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DDA08AD317E60AC70056F04B /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MapViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		DDA08AD517E60AC70056F04B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDA08ADB17E60AC70056F04B /* LocationAPIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationAPIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA08ADC17E60AC70056F04B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,8 +57,8 @@
 		DDA08AE617E60AC70056F04B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDA08AE817E60AC70056F04B /* LocationAPIExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationAPIExampleTests.m; sourceTree = "<group>"; };
 		DDA08AF217E60AFA0056F04B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		DDA08AF517E60B3E0056F04B /* LocationAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAPI.h; sourceTree = "<group>"; };
-		DDA08AF617E60B3E0056F04B /* LocationAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAPI.m; sourceTree = "<group>"; };
+		DDA08AF517E60B3E0056F04B /* LocationAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = LocationAPI.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DDA08AF617E60B3E0056F04B /* LocationAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LocationAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		DDA08AF817E60C360056F04B /* SetLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLocationViewController.h; sourceTree = "<group>"; };
 		DDA08AF917E60C360056F04B /* SetLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -486,6 +486,7 @@
 				DDA08AEE17E60AC70056F04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDA08AEF17E60AC70056F04B /* Build configuration list for PBXNativeTarget "LocationAPIExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				DDA08AF117E60AC70056F04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
