@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SetLocationViewController.h
 //  LocationAPIExample
 //
 //  Created by Guilherme Rambo on 15/09/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SetLocationViewController : UIViewController
 
 @end
